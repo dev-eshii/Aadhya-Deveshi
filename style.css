@@ -1,4 +1,3 @@
-/* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
   margin: 0;
@@ -47,7 +46,7 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #000000;
+  color: #c6b2da;
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -74,7 +73,7 @@ nav.sticky .menu a{
   color: #FFF;
 }
 nav.sticky .menu a:hover{
-  color: #0E2431;
+  color: #1e0331;
 }
 .navbar .media-icons a{
   color: #eae2f1;
@@ -89,7 +88,7 @@ nav.sticky .media-icons a{
 nav .menu-btn,
 .navbar .menu .cancel-btn{
   position: absolute;
-  color: #fff;
+  color: #c6b2da;
   right: 30px;
   top: 20px;
   font-size: 20px;
@@ -98,13 +97,13 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #eae2f1;
+  color:#c6b2da;
 }
 nav.sticky .menu-btn{
-  color: #FFF;
+  color:#c6b2da;
 }
 .navbar .menu .menu-btn{
-  color: #fff;
+  color: #c6b2da;
 }
 
 /* home section styling */
@@ -166,9 +165,6 @@ nav.sticky .menu-btn{
   color: #4070f4;
 }
 
-/* About Section Styling */
-/* Those Elements Where We Have Apply Same CSS,
- I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
   padding-top: 40px;
 }
@@ -254,49 +250,30 @@ section .button button:hover{
 }
 
  /* My Skills CSS */
- .skills{
-    background-color: #f0ebf5;
- }
- .skills .content{
-   padding: 40px 0;
- }
- .skills .skills-details{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
- .skills-details .text{
-   width: 50%;
- }
- .skills-details p{
-   color: #000000;
-   text-align: justify;
- }
-.skills .skills-details .experience{
+ .skills {
+  background-color: #f0ebf5;
+}
+
+.skills .content {
+  padding: 40px 0;
+}
+
+.skills .skills-details {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 10px;
+  flex-wrap: wrap; /* Added for responsiveness */
 }
-.skills-details .experience .num{
-  color: #000000;
-  font-size: 80px;
-}
-.skills-details .experience .exp{
-  color: #000000;
-  margin-left: 20px;
-  font-size: 4px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-.skills-details .boxes{
-  width: 1000%;
+
+.skills-details .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.skills-details .box{
-  margin: 20px 0;
-  width: calc(100% / 2 - 30px);
+
+.skills-details .box {
+  margin: 10px ; /* Changed from 20% to 20px for better spacing */
+  width: calc(50% - 40px); /* Adjusted to fit two boxes per row with spacing */
   text-align: center;
   border-radius: 12px;
   padding: 30px 10px;
@@ -304,19 +281,32 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-.skills-details .boxes .topic{
+
+.skills-details .boxes .topic {
   font-size: 44px;
   color: #000000;
 }
-.skills-details .boxes .per{
+
+.skills-details .boxes .per {
   font-size: 18px;
   color: #000000;
 }
+
 .skills .boxes .box .topic img {
-    width: 150px; 
-    height: 150px; 
-    object-fit: contain; 
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 508px) {
+  .skills-details .box {
+    width: calc(100% - 20px); /* Full width for smaller screens */
   }
+}
+
+
   
 /* My Services CSS */
 .services .boxes{
@@ -469,7 +459,7 @@ footer .text span a:hover{
     margin: 10px 0;
   }
   nav.sticky .menu a:hover{
-    color: #4070f4;
+    color:#1e0331;
   }
   nav .navbar .media-icons{
     display: none;
@@ -494,6 +484,8 @@ footer .text span a:hover{
     margin-bottom: 50px;
   }
   .skills-details .boxes{
+    margin: 20px 0;
+    width: 100%;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -507,16 +499,16 @@ footer .text span a:hover{
 }
 }
 
-@media (max-width: 500px){
+@media (max-width: 0px){
   .home .text-two{
-    font-size: 55px;
+    font-size: 50px;
   }
   .home .text-three{
     font-size: 33px;
   }
   .skills-details .boxes .per{
     font-size: 50px;
-    color: #4070f4;
+    color: #1e0331;
   }
 }
 
@@ -534,6 +526,10 @@ footer .text span a:hover{
   .contact-icons a:hover {
     color: #0077b5; /* LinkedIn color */
   }
+
+
+
+  
 
 
 
